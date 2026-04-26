@@ -1,0 +1,16 @@
+{
+  "name": "create-account-form-tests",
+  "version": "1.0.0",
+  "description": "Unit tests for the Create New Account form – QA Assignment",
+  "scripts": {
+    "test": "jest --verbose",
+    "test:coverage": "jest --verbose --coverage"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": ["**/src/**/*.test.js"]
+  }
+}
