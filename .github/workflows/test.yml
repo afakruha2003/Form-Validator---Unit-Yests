@@ -1,0 +1,40 @@
+name: Run Unit Tests
+
+on:
+  push:
+    branches: ["**"]          # Every push on every branch
+  pull_request:
+    branches: [main, master]  # Every PR targeting main/master
+
+jobs:
+  test:
+    name: Jest – Create Account Form
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Check out the repo
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Set up Node.js 20
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      # 3. Install dependencies (jest)
+      - name: Install dependencies
+        run: npm install
+
+      # 4. Run tests with coverage
+      - name: Run tests
+        run: npm run test:coverage
+
+      # 5. Upload coverage report as artifact
+      - name: Upload coverage report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: coverage/
