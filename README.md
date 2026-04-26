@@ -11,6 +11,8 @@ account-form-tests/
 │   └── workflows/
 │       └── test.yml              ← GitHub Actions CI pipeline
 ├── package.json
+├── package-lock.json
+├── .gitignore
 └── README.md
 ```
 
@@ -95,3 +97,4 @@ Every `git push` triggers the pipeline automatically:
 | TC-25| Full Form        | Integration| Only email invalid                 | 1 error (email)  |
 | TC-26| Last Name        | EP Invalid| null input                          | Required error   |
 | TC-27| Date of Birth    | BVA       | Month = 00 (below minimum)          | Month error      |
+"## Updated" 
