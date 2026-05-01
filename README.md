@@ -66,7 +66,7 @@ Every `git push` triggers the pipeline automatically:
 
 ---
 
-## 📋 Test Case Summary (27 total)
+## Test Case Summary (27 total)
 
 | TC   | Field            | Technique | Input Description                   | Expected Result  |
 |------|------------------|-----------|-------------------------------------|------------------|
