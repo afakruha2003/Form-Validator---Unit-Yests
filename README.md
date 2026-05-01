@@ -1,6 +1,6 @@
 # Create New Account – Form Validator & Unit Tests
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 account-form-tests/
@@ -18,7 +18,7 @@ account-form-tests/
 
 ---
 
-## 🧪 Fields Tested
+##  Fields Tested
 
 | Field            | Technique Used                    |
 |------------------|-----------------------------------|
@@ -32,7 +32,7 @@ account-form-tests/
 
 ---
 
-## 🚀 How to Run Locally
+##  How to Run Locally
 
 ### 1. Install Node.js
 Download from https://nodejs.org (choose LTS version 20+)
@@ -52,7 +52,7 @@ A `coverage/` folder is created. Open `coverage/lcov-report/index.html` in your 
 
 ---
 
-## 🤖 GitHub Actions (CI/CD)
+##  GitHub Actions (CI/CD)
 
 Every `git push` triggers the pipeline automatically:
 
